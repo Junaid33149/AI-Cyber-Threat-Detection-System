@@ -1,34 +1,49 @@
-# AI Cyber Threat Detection System 🚀
+# 🛡️ AI Cyber Threat Detection System
+---
 
-## 📌 Overview
-This project detects cyber threats using Machine Learning and provides a clean web interface for real-time prediction.
+## 🧪 Sample Inputs
 
-## ⚙️ Features
-- Threat Detection (Normal / Attack)
-- Flask Web Interface
-- Real-time Input Prediction
-- Clean UI with Animation
+### ✅ Normal Traffic
+- Flow Duration: 1000  
+- Forward Packets: 10  
+- Backward Packets: 5  
+- Packet Length Mean: 200  
+- Flow Bytes/s: 3000  
 
-## 🛠️ Tech Stack
-- Python
-- Scikit-learn
-- Flask
-- Pandas, NumPy
-
-## ▶️ Run Project
-
-pip install -r requirements.txt  
-python main.py  
-python app.py  
-
-## 📊 Output
-- Normal Traffic  
-- Threat Detected  
-
-## 📁 Project Structure
-- app.py → UI  
-- main.py → Model training  
-- models/ → Saved model  
-- src/ → Utilities  
+### ⚠️ Threat (Attack)
+- Flow Duration: 200000  
+- Forward Packets: 1500  
+- Backward Packets: 1000  
+- Packet Length Mean: 1500  
+- Flow Bytes/s: 500000  
 
 ---
+
+## 📊 Output
+- ✅ Normal Traffic  
+- ⚠️ Threat Detected  
+
+---
+
+## ⚠️ Note
+Dataset and model files are not included due to large size.
+
+👉 You can use the CICIDS2017 dataset for training.
+
+---
+
+## 🚀 Future Enhancements
+- Real-time network packet capture
+- Deep learning models
+- Dashboard with analytics
+- Deployment on cloud
+
+---
+
+## 👨‍💻 Author
+Khader Gouse  
+
+---
+
+## 📌 Project Type
+Final Year / Academic Project  
